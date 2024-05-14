@@ -91,7 +91,7 @@ class BrickBreaker extends FlameGame
               (i + 0.5) * brickWidth + (i + 1) * brickGutter,
               (j + 2.0) * brickHeight + j * brickGutter,
             ),
-            color: brickColors[i],
+            color: brickColors[math.Random().nextInt(brickColors.length)],
           ),
     ]);
   }
