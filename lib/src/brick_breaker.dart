@@ -7,7 +7,7 @@ import 'components/components.dart';
 import 'config.dart';
 import 'dart:math' as math;
 
-class BrickBreaker extends FlameGame {
+class BrickBreaker extends FlameGame with HasCollisionDetection {
   BrickBreaker()
       : super(
           camera: CameraComponent.withFixedResolution(
